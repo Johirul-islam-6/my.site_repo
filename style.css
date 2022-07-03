@@ -52,8 +52,8 @@ nav {
   text-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px;
 }
 .cta-btn {
-  margin: 1rem;
-  padding: 0.6rem 1.6rem;
+  margin: 2rem 0;
+  padding: 0.4rem 1.6rem;
   background: linear-gradient(
     to right,
     rgb(255, 255, 255) 50%,
