@@ -4,42 +4,308 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcom my site 2022</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="img/g.jpg" type="image/x-icon" />
-  </head>
-  <body>
-    <nav>
-      <h1 class="logo">Welcome_my_Site_Today</h1>
-    </nav>
-    <div class="hero-section">
-      <img src="./hero.jpg" class="hero-img" alt="" />
-      <div class="cta">
-        <div class="cta-text">
-          <h2><span class="cta1">This is</span></h2>
-          <h2><span class="cta2">my</span></h2>
-          <h2><span class="cta3">website page</span></h2>
-        </div>
-        <div class="cta-text">
-          <h2><span class="cta4">to</span></h2>
-          <h2><span class="cta5">click this</span></h2>
-          <h2><span class="cta6">button</span></h2>
-        </div>
-        <a href="index.html"><button class="cta-btn">Visite Site</button></a>
-      </div>
-    </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
-      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
-    <script src="./app.js"></script>
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>educational website- homd</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav id="topnav">
+        <a href="main-page.html"><img src="image/logo.png" alt="" /></a>
+        <div class="nav-links" id="nav-links">
+          <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li>
+              <a href="documen.html">OUR SERVICES</a>
+            </li>
+            <li class="nav-item mt-3 mt-lg-0" id="li">
+              <button
+                onclick="document.getElementById('id01').style.display='block'"
+                style="width: auto"
+              >
+                Login
+              </button>
+
+              <div id="id01" class="modal">
+                <form
+                  class="modal-content animate p-3"
+                  action="/action_page.php"
+                  method="post"
+                >
+                  <div class="imgcontainer">
+                    <span
+                      onclick="document.getElementById('id01').style.display='none'"
+                      class="close"
+                      title="Close Modal"
+                      >&times;</span
+                    >
+                    <img src="image/my pic.png" alt="Avatar" class="avatar" />
+                  </div>
+
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input
+                      type="text"
+                      placeholder="Enter Username"
+                      name="uname"
+                      required
+                    />
+
+                    <label for="psw"><b>Password</b></label>
+                    <input
+                      type="password"
+                      placeholder="Enter Password"
+                      name="psw"
+                      required
+                    />
+                    <button class="btns" type="submit">Login</button>
+                    <label>
+                      <input
+                        type="checkbox"
+                        checked="checked"
+                        name="remember"
+                      />
+                      Remember me
+                    </label>
+                  </div>
+
+                  <div class="container" style="background-color: #f1f1f1">
+                    <button
+                      type="button"
+                      onclick="document.getElementById('id01').style.display='none'"
+                      class="cancelbtn"
+                    >
+                      Cancel
+                    </button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+      </nav>
+
+      <!-------------------nav ending------------>
+
+      <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          nam culpa optio <br />
+          amet consectetur adipisicing elit. Repudiandae nam culpa optio
+          molestiae molestiae minus unde.
+        </p>
+        <a class="hero-btn" href="">Visit us to know more</a>
+      </div>
+    </section>
+
+    <!----------course-------->
+
+    <section class="course">
+      <h1>Courses we offer</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eos.</p>
+      <div class="row">
+        <div class="course-col">
+          <h3>intermediate</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+            veritatis? Libero accusantium nostrum quos. Distinctio repellat ab
+            possimus iusto vero quidem quod cum minima recusandae molestiae
+            ullam cumque minus tenetur eos excepturi hic, ipsum architecto,
+            delectus sed. Officiis, sapiente aut.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>degree</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+            veritatis? Libero accusantium nostrum quos. Distinctio repellat ab
+            possimus iusto vero quidem quod cum minima recusandae molestiae
+            ullam cumque minus tenetur eos excepturi hic cumque minus tenetur
+            eos excepturi hic, ipsum architecto, delectus sed. Officiis,
+            sapiente aut.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>post graduation</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+            veritatis? Libero accusantium nostrum quos. Distinctio repellat ab
+            possimus iusto vero quidem quod cum minima recusandae minus tenetur
+            eos excepturi hic, ipsum architecto, delectus sed. Officiis,
+            sapiente aut.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-------campus----->
+
+    <section class="campus">
+      <h1>our global campus</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam,
+        quaerat?
+      </p>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="image/london.png" alt="" />
+          <div class="layer">
+            <h3>London</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="image/newyork.png" alt="" />
+          <div class="layer">
+            <h3>Newyork</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="image/washington.png" alt="" />
+          <div class="layer">
+            <h3>Washington</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------facilities------>
+    <section class="facilities">
+      <h1>our facilities</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+        atque ipsum eos!
+      </p>
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="image/library.png" alt="" />
+          <h3>world class library</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            quas , mollitia voluptate dolor commodi accusantium velit
+            exercitationem eius inventore aliquid.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="image/basketball.png" alt="" />
+          <h3>largest playground</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            quas , mollitia voluptate dolor commodi accusantium velit
+            exercitationem eius inventore aliquid.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="image/cafeteria.png" alt="" />
+          <h3>tasty foods</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            quas , mollitia voluptate dolor commodi accusantium velit
+            exercitationem eius inventore aliquid.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--------testimonials------------>
+    <section class="testimonials">
+      <h1>What our student says</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+        perferendis ipsam, praesentium ex aliquid accusamus!
+      </p>
+      <div class="row">
+        <div class="testimonials-col">
+          <img src="image/user1.jpg" alt="" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rem
+              officiis, possimus quis veniam itaque dicta nemo libero ipsam
+              aliquid.
+            </p>
+            <h3>farhan labib mugdho</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+        <div class="testimonials-col">
+          <img src="image/user2.jpg" alt="" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rem
+              officiis, possimus quis veniam itaque dicta nemo libero ipsam
+              aliquid.
+            </p>
+            <h3>istiak ahmed</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------call to action---------->
+
+    <div class="cta">
+      <h1>
+        Lorem ipsum, dolor sit amet consectetur <br />
+        adipisicing elit. Est, dolor.
+      </h1>
+      <a class="hero-btn" href="">contact us</a>
+    </div>
+
+    <!----------foooter------->
+    <section class="footer">
+      <h4>Social Contact</h4>
+      <h1 id="about_us2"></h1>
+      <div class="icons">
+        <a href="https://www.facebook.com/rachel.kan.3591267"
+          ><i id="fa" class="fa-brands fa-facebook"></i
+        ></a>
+
+        <a href=""><i id="fa" class="fa-brands fa-instagram"></i></a>
+        <a href=""> <i id="fa" class="fa-brands fa-linkedin"></i></a>
+        <a href=""> <i id="fa" class="fa-brands fa-twitter"></i></a>
+      </div>
+      <p>Made with <i class="fa-solid fa-heart"></i> By Rascel</p>
+    </section>
+    <h1 id="about_us2"></h1>
+    <script>
+      var navlinks = document.getElementById("nav-links");
+
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-300px";
+      }
+    </script>
   </body>
 </html>
